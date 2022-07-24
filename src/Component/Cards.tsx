@@ -11,26 +11,22 @@ function Cards() {
   const [Style, setStyle] = useState('defaultCard')
   const [Click, setClick] = useState(false)
 
-  const revealColor = (e:MouseEvent,item : item ) => {
-    const target = e.target as HTMLInputElement;
-    target.classList.add(`card${item.id}`)
-    targetId.push(item.id)
-    
-    console.log(targetId)
-    // reseting color after 2 color revealed
-    if(targetId.length === 2) {
-      targetId = []
+  const revealColor = (e: MouseEvent<HTMLElement>) => {
+    const target = e.target as HTMLElement
+    if(target.classList.contains('defaultCard')) {
+      
     }
   }
 
   return (
     <>
-
-        {cardData.map(item => (
-            <div className={Style} onClick={e => revealColor(e,item)}
-            key={item.id}
-            ></div>
-        ))}
+        <div className="cardContainer" onClick={revealColor}>
+          {cardData.map(item => (
+              <div className={Style}
+              key={item.id}
+              ></div>
+          ))}
+        </div>
     </>
   )
 }
