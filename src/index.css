@@ -7,6 +7,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+main {
+  padding : 20px;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -19,8 +23,59 @@ code {
   gap : 20px;
 }
 
-.card {
+.defaultCard {
   padding : 20px;
   height : 70px;
   background-color: antiquewhite;
+}
+
+.card1 {
+  padding : 20px;
+  height : 70px;
+  background-color: #0B032D;
+}
+.card2 {
+  padding : 20px;
+  height : 70px;
+  background-color: #A77E58;
+}
+.card3 {
+  padding : 20px;
+  height : 70px;
+  background-color: #FFB997;
+}
+.card4 {
+  padding : 20px;
+  height : 70px;
+  background-color: #74546A;
+}
+.card5 {
+  padding : 20px;
+  height : 70px;
+  background-color: #74546A;
+}
+.card6 {
+  padding : 20px;
+  height : 70px;
+  background-color: #A77E58;
+}
+.card7 {
+  padding : 20px;
+  height : 70px;
+  background-color: #FFB997;
+}
+.card8 {
+  padding : 20px;
+  height : 70px;
+  background-color: #F67E7D;
+}
+.card9 {
+  padding : 20px;
+  height : 70px;
+  background-color: #F67E7D;
+}
+.card10 {
+  padding : 20px;
+  height : 70px;
+  background-color: #0B032D;
 }
