@@ -1,16 +1,18 @@
 import React from 'react';
 import './Card.css';
 
-function Card({card,handleChoice}:any) {
+function Card({cardData,handleChoice,flipped,disabled}:any) {
 
-    const handleClick = (card:any) => {
-        handleChoice(card)
+    const handleClick = () => {
+        if(!disabled) {
+            handleChoice(cardData)
+        }
     }
   return (
     <div>
         <div className='card'>
-            <div>
-                <img src={card.src} className='front' alt="cover-card" />
+            <div className={flipped ? 'flipped' : ''}>
+                <img src={cardData.src} className='front' alt="cover-card" />
                 <img 
                 src="/img/cover.png"
                 className='back'
